@@ -1,0 +1,43 @@
+.polaroid {
+    transition: all 1s ease;
+    font-size: 2em;
+    display: inline-block;
+    padding: 0.45em;
+    padding-bottom: 2.35em;
+  }
+  .polaroid img {
+    width: 7.9em;
+    height: 7.9em;
+  }
+  .polaroid:after {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 2.35em;
+    bottom: 0;
+    display: block;
+    text-align: center;
+  }
+  .polaroid {
+    background-color: #fff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    transform: rotate(attr(deg));
+  }
+  .polaroid:after {
+    font-family: 'Annie Use Your Telescope', cursive;
+    content: attr(title);
+  }
+  .polaroid-stack {
+    text-align: center;
+    position: relative;
+    border: 1px solid red;
+    height: 600px;
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .polaroid-stack .polaroid {
+    left: 35%;
+    top: 22%;
+    position: absolute;
+  }
+  
