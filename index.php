@@ -21,20 +21,20 @@ if ($dir = opendir($dirPath)) {
 </head>
 <body>
 
-
-    <?php 
-        for($i = 0; $i <= count($arrayjs)-1; $i++) {
-            // echo $dirPath.$arrayjs[$i];
-            ?>
-            <div class="card">
-                <div class="image">
-                    
+    <div class="stack">
+        <?php 
+            for($i = 0; $i <= count($arrayjs)-1; $i++) {
+                ?>
+                <div class="card">
+                    <div class="image">
+                        <img src="<?php echo $dirPath.$arrayjs[$i] ?>" alt="<?php echo $arrayjs[$i] ?>">
+                    </div>
                 </div>
-            </div>
-            <br/>
-            <?php
-        }
-    ?>
+                <br/>
+                <?php
+            }
+        ?>
+    </div>
 
     <script src="main.js"></script>
 </body>
