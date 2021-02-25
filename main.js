@@ -6,6 +6,8 @@ const images = document.querySelectorAll('.image>img');
 const cards = document.querySelectorAll('.card');
 const stack = document.getElementById('stack');
 
+const intro = new Audio('files/mp3/gtst_seizoen_31_intro.mp3');
+
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -15,6 +17,7 @@ function getRandomDegree(min, max) {
 }
 
 stack.addEventListener('mouseenter', function() {
+    intro.play();
     cards.forEach((card) => {
         scale = getRandomInt(1.0, 1.4);
         deg = getRandomInt(-25, 25);
@@ -22,6 +25,10 @@ stack.addEventListener('mouseenter', function() {
         y = getRandomInt(-50, 50);
         card.style.transform = 'rotate(' + deg + 'deg) translate(' + x + '%, ' + y + '%) scale(' + scale + ')';
     });
+});
+
+stack.addEventListener('mouseleave', function(){
+    intro.stop();
 });
 
 

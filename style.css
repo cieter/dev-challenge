@@ -1,3 +1,8 @@
+@font-face {
+    font-family: gtst;
+    src: url('files/fonts/DJ5CTRIAL.ttf');
+}
+
 body {
     padding: 0;
     overflow: hidden;
@@ -6,12 +11,87 @@ body {
 
 .background_image>img {
     position: absolute;
-    top: 85px;
+    top: 10px;
     left: -10px;
     z-index: -1;
     filter: blur(15px);
     width: 110%;
     height: 100vh;
+    display: block;
+}
+
+.title {
+    color: #ffffff;
+    z-index: 10;
+    width: 350px;
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-family: gtst;
+    font-size: 60px;
+    transform: rotate(-3deg);
+}
+
+.title>.first-letter {
+    font-size: 100px;
+}
+
+.title>.bottom-text {
+    display: block;
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    padding-left: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+}
+
+.title>.bottom-text>span {
+    padding-left: 40px;
+}
+
+.red_circle {
+    z-index: 9;
+    display: block;
+    position: absolute;
+    background-color: red;
+    top: 24%;
+    left: 36%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.red_lines {
+    z-index: 10;
+    color: rgba(83, 0, 0, 1);
+    position: absolute;
+    top: 22%;
+    left: 36%;
+    display: block;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border-top: 30px solid firebrick;
+    border-bottom: 30px solid firebrick;
+    transform: rotate(-30deg);
+
+}
+
+.white_lines {
+    z-index: 10;
+    color: rgba(83, 0, 0, 1);
+    position: absolute;
+    top: 24%;
+    left: 34%;
+    display: block;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    border-left: 30px solid rgb(255, 255, 255, 0.7);
+    border-right: 30px solid rgba(255, 255, 255, 0.7);
+    transform: rotate(-20deg);
 }
 
 #stack {
@@ -21,6 +101,7 @@ body {
     max-height: 99vh;
     width: 100%;
     height: 100%;
+    display: block;
 }
 
 .card {

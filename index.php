@@ -21,22 +21,26 @@ if ($dir = opendir($dirPath)) {
 </head>
 <body>
     <div class="background_image"><img src="files/images/laurahenk.jpg" alt=""></div>
+    <div class="logo">
+        <div class="title"><span class="first-letter">G</span>oede tijden<span class="bottom-text">Slechte <span>tijden</spane></span></div>
+        <div class="red_circle"></div>
+        <div class="red_lines"></div>
+        <div class="white_lines"></div>
+    </div>
     <div id="stack">
         <?php 
             for($i = 0; $i <= count($arrayjs)-1; $i++) {
-                ?>
+        ?>
                 <div class="card">
                     <div class="image">
                         <img class="iamge" src="<?php echo $dirPath.$arrayjs[$i] ?>" alt="<?php echo $arrayjs[$i] ?>">
                     </div>
                 </div>
                 <br/>
-                <?php
+        <?php
             }
         ?>
     </div>
-
-
     <script src="main.js"></script>
 </body>
 </html>
