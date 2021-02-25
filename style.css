@@ -9,6 +9,36 @@ body {
     background-color: #cdcdcd;
 }
 
+#wrapper {
+    transition: all 1s ease;
+    display: none;
+}
+
+#playButton {
+    position: absolute;
+    display: block;
+    top: 40%;
+    left: 40%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: firebrick;
+}
+
+#playButton>#myButton {
+    position:absolute;
+    z-index: 1;
+    top: 32%;
+    left: 40%;
+    font-size: 100px;
+    color: #cdcdcd;
+}
+
+#playButton:hover{
+    cursor: pointer;
+    background-color: rgb(138, 32, 32);
+}
+
 .background_image>img {
     position: absolute;
     top: 10px;
@@ -106,8 +136,8 @@ body {
 
 .card {
     transition: all 1s ease;
-    max-width: 500px;
-    max-height: 300px;
+    max-width: 400px;
+    max-height: 250px;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -122,3 +152,6 @@ body {
     margin: 1% auto;
 }
 
+#intro {
+    display: none;
+}

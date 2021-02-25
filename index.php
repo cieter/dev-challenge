@@ -20,6 +20,10 @@ if ($dir = opendir($dirPath)) {
     <title>GTST Intro</title>
 </head>
 <body>
+    <div id="playButton">
+        <div id="myButton">&#9654;</div>
+    </div>
+    <div id="wrapper">
     <div class="background_image"><img src="files/images/laurahenk.jpg" alt=""></div>
     <div class="logo">
         <div class="title"><span class="first-letter">G</span>oede tijden<span class="bottom-text">Slechte <span>tijden</spane></span></div>
@@ -40,6 +44,8 @@ if ($dir = opendir($dirPath)) {
         <?php
             }
         ?>
+    </div>
+    <!-- <audio id="intro" src="files/mp3/gtst_seizoen_31_intro.mp3" allow="autoplay"></audio> -->
     </div>
     <script src="main.js"></script>
 </body>
