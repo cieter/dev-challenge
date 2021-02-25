@@ -21,7 +21,7 @@ if ($dir = opendir($dirPath)) {
 </head>
 <body>
     <div id="playButton">
-        <div id="myButton">&#9654;</div>
+        <div id="myButton"></div>
     </div>
     <div id="wrapper">
     <div class="background_image"><img src="files/images/laurahenk.jpg" alt=""></div>
