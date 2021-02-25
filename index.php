@@ -20,14 +20,14 @@ if ($dir = opendir($dirPath)) {
     <title>GTST Intro</title>
 </head>
 <body>
-
-    <div class="stack">
+    <div class="background_image"><img src="files/images/laurahenk.jpg" alt=""></div>
+    <div id="stack">
         <?php 
             for($i = 0; $i <= count($arrayjs)-1; $i++) {
                 ?>
                 <div class="card">
                     <div class="image">
-                        <img src="<?php echo $dirPath.$arrayjs[$i] ?>" alt="<?php echo $arrayjs[$i] ?>">
+                        <img class="iamge" src="<?php echo $dirPath.$arrayjs[$i] ?>" alt="<?php echo $arrayjs[$i] ?>">
                     </div>
                 </div>
                 <br/>
@@ -35,6 +35,7 @@ if ($dir = opendir($dirPath)) {
             }
         ?>
     </div>
+
 
     <script src="main.js"></script>
 </body>
