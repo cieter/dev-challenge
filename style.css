@@ -19,6 +19,11 @@ body {
     to {opacity: 100%;}
 }
 
+@keyframes fadeOut {
+    from {opacity: 100%;}
+    to {opacity: 0%;}
+}
+
 #playButton {
     position: absolute;
     display: block;

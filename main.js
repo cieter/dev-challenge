@@ -41,12 +41,14 @@ playButton.onclick = function(){
         loadScene();     
     }, 100);
     setTimeout(function(){
-        updateScene();
-    }, 2000);
+        scene.style.animation = '';
+        scene.style.animation = 'fadeOut 1s';
+    }, 11010);
     setTimeout(function(){
+        playButton.style.animation = 'fadeIn 3s';
         playButton.style.display = 'block';
         scene.style.display = 'none';    
-    }, 13000);
+    }, 12000);
 };
 
 
