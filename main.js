@@ -27,10 +27,6 @@ stack.addEventListener('mouseenter', function() {
     });
 });
 
-stack.addEventListener('mouseleave', function(){
-    intro.stop();
-});
-
 
 
 // stack.addEventListener('mouseleave', function() {
