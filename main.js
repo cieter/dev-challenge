@@ -18,6 +18,9 @@ function getRandomDegree(min, max) {
     return (Math.random() * (max - min + 1) + min);
 }
 
+const updateScene = () => {    
+}
+
 const loadScene = () => {
     intro.play();
     cards.forEach((card) => {
@@ -25,20 +28,25 @@ const loadScene = () => {
         deg = getRandomInt(-25, 25);
         x = getRandomInt(10, 90);
         y = getRandomInt(-50, 50);
+        console.log('x: '+x+ ', y: '+y+', deg: '+deg+', scale: '+scale);
         card.style.transform = 'rotate(' + deg + 'deg) translate(' + x + '%, ' + y + '%) scale(' + scale + ')';
     });
 };
 
 playButton.onclick = function(){
     playButton.style.display = 'none';
+    scene.style.animation = 'fadeIn 3s';
     scene.style.display = 'block';
     setTimeout(function(){
         loadScene();     
     }, 100);
     setTimeout(function(){
+        updateScene();
+    }, 2000);
+    setTimeout(function(){
         playButton.style.display = 'block';
         scene.style.display = 'none';    
-    },10500);
+    }, 13000);
 };
 
 

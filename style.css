@@ -14,6 +14,11 @@ body {
     display: none;
 }
 
+@keyframes fadeIn {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
 #playButton {
     position: absolute;
     display: block;
@@ -85,7 +90,8 @@ body {
     z-index: 9;
     display: block;
     position: absolute;
-    background-color: red;
+    /* background-color: #DA1820; */
+    background-image: radial-gradient(farthest-corner at 1px 10px,#FFCF56 0%, #DA1820 100%);
     top: 24%;
     left: 36%;
     width: 500px;
@@ -103,8 +109,8 @@ body {
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    border-top: 30px solid firebrick;
-    border-bottom: 30px solid firebrick;
+    border-top: 30px solid #B21716;
+    border-bottom: 30px solid #B21716;
     transform: rotate(-30deg);
 
 }
@@ -119,8 +125,8 @@ body {
     width: 520px;
     height: 520px;
     border-radius: 50%;
-    border-left: 30px solid rgb(255, 255, 255, 0.7);
-    border-right: 30px solid rgba(255, 255, 255, 0.7);
+    border-left: 30px solid rgb(187, 188, 190, 0.7);
+    border-right: 30px solid rgba(187, 188, 190, 0.7);
     transform: rotate(-20deg);
 }
 
@@ -135,7 +141,7 @@ body {
 }
 
 .card {
-    transition: all 1s ease;
+    transition: all 6s ease;
     max-width: 400px;
     max-height: 250px;
     width: 100%;
